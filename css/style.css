@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.formContainer{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#form{
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 2px solid black;
+    flex-direction: column;
+}
+.formBody{
+    border: 2px solid rgb(250, 124, 83);  
+}
+.formBodyContraste{
+    border: 2px solid  rgb(72, 72, 72);
+    .formBodyItem{
+        input{
+            background-color: rgb(51, 51, 51);
+            border: 2px solid rgb(72, 72, 72);
+            color: whitesmoke;
+        }
+        input::placeholder{
+            color: white;
+        }
+    }     
+}
+.formBody .formBodyItem{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 3px;
+    color: white;
+    input{
+        padding: 2px;
+    }
+}
+.formBody #btnEnviar{
+    margin: 10px;
+    width: 350px;
+    border: 2px solid white;
+    padding: 7px;
+    background-color: rgb(250, 124, 83);
+    color: white;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+.bgEstilo1{
+    background-color: rgb(191, 22, 35);
+}
+.formBodyItem{
+    flex-direction: row;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.formBodyItemBorder{
+    #item{
+        border: 2px solid rgb(51, 51, 51); 
+    }
+    
+}
+#formBtnEstilos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+#formBtnEstilos button{
+    width: 120px;
+    padding: 5px;
+    background-color: rgb(250, 124, 83);
+    color: white;
+    font-weight: bold;
+    font-size: 0.8rem;
+    border: 2px solid white;
+}
+.bgAltoContraste{
+    background-color: black;
+}
+.formBtnEstilosAltoContraste{
+    #btnEnviar, #btnEstilo1 , #btnEstiloAltoContraste{
+        background-color:rgb(255, 214, 2);
+        color: black;
+        border: 2px solid rgb(255, 214, 2)
+    }  
+}
+h3{
+    color: white;
+    margin-bottom: 15px;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+#btnEnviar:hover{
+    cursor: pointer;
+}
+#btnEstilo1:hover{
+    cursor: pointer;
+}
+#btnEstiloAltoContraste:hover{
+    cursor: pointer;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script defer src="./js/main.js"></script>
+    <title>Formulario</title>
+</head>
+<body>
+    <div class="formContainer">
+        <form id="form" class="bgEstilo1">
+            <h3 >Formulario de Datos personales</h3>
+            <div id="formBody" class="formBody" >
+                <div class="formBodyItem">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name"  required placeholder="Ingrese su nombre"/>
+                </div>
+                <!-- APELLIDO -->
+                <div class="formBodyItem">
+                    <label for="lastname">Apellido:</label>
+                    <input type="text"  id="lastname" name="lastname" placeholder="Ingrese su apellido"  required />
+                </div>
+
+                <!-- EMAIL -->
+                <div class="formBodyItem">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Ingrese su email" required />
+                </div>
+                <!-- FECHA -->
+                <div class="formBodyItem">
+                    <label for="date">Fecha de Nacimiento:</label>
+                    <input type="date" id="date" name="trip-start" />
+                </div>
+                    <!-- PAIS -->
+                <div class="formBodyItem">
+                    <label for="country">País de Residencia:</label>
+                    <input type="text"  id="country" name="country" placeholder="Ingrese su país"/>
+                </div>
+                <div id="formBtnEnviar">
+                    <button id="btnEnviar" type="submit">Enviar</button>
+                </div>
+            </div>
+            <!-- NOMBRE -->
+            <div id="formBtnEstilos">
+                <button id="btnEstilo1" type="submit"  >Estilo 1</button>
+                <button id="btnEstiloAltoContraste" type="submit" >Estilo de Alto Contraste</button>
+            </div>
+            
+        </form>
+    
+    </div>
+</body>
+</html>
