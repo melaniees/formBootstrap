@@ -17,8 +17,7 @@
     padding-left: 30px;
     padding-right: 30px;
     border: 2px solid black;
-    flex-direction: column;
-    
+    flex-direction: column; 
 }
 .formBody{
     border: 2px solid rgb(250, 124, 83);  
