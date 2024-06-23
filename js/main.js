@@ -23,3 +23,7 @@ btnEstiloAltoContraste.addEventListener("click",() =>{
     formBtnEstilos.classList.add("formBtnEstilosAltoContraste");
     formBtnEnviar.classList.add("formBtnEstilosAltoContraste");  
 })
+btnEnviar.addEventListener("click",() =>{
+    form.reset();
+
+})
