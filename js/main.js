@@ -25,4 +25,5 @@ btnEstiloAltoContraste.addEventListener("click",() =>{
 })
 btnEnviar.addEventListener("click",() =>{
     form.reset();
+    alert("¡Gracias por su respuesta!");
 })
