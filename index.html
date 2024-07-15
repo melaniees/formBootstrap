@@ -3,39 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <script defer src="./js/main.js"></script>
     <title>Formulario</title>
 </head>
 <body>
-    <div class="formContainer">
+    <div class="container mt-5 d-flex justify-content-center align-items-center form-container">
         <form id="form" class="bgEstilo1">
             <h3 >Formulario de Datos personales</h3>
             <div id="formBody" class="formBody" >
                 <div class="formBodyItem">
                     <label for="name">Nombre:</label>
-                    <input type="text" id="name" name="name"  required placeholder="Ingrese su nombre"/>
+                    <input type="text" id="nombre" name="name"  required placeholder="Ingrese su nombre"/>
+                    <p class="errorMsj" id="nameError"></p>
                 </div>
                 <!-- APELLIDO -->
                 <div class="formBodyItem">
                     <label for="lastname">Apellido:</label>
-                    <input type="text"  id="lastname" name="lastname" placeholder="Ingrese su apellido"  required />
+                    <input type="text"  id="apellido" name="lastname" placeholder="Ingrese su apellido"  required />
+                    <p class="errorMsj" id="apellidoError"></p>
                 </div>
-
                 <!-- EMAIL -->
                 <div class="formBodyItem">
                     <label for="email">Email:</label>
                     <input type="email" id="email" placeholder="Ingrese su email" required />
+                    <p class="errorMsj" id="emailError"></p>
                 </div>
                 <!-- FECHA -->
                 <div class="formBodyItem">
                     <label for="date">Fecha de Nacimiento:</label>
                     <input type="date" id="date" name="trip-start" />
+                    <p class="errorMsj" id="dateError"></p>
                 </div>
                     <!-- PAIS -->
                 <div class="formBodyItem">
                     <label for="country">País de Residencia:</label>
-                    <input type="text"  id="country" name="country" placeholder="Ingrese su país" required/>
+                    <input type="text"  id="paisResidencia" name="country" placeholder="Ingrese su país" required/>
+                    <p class="errorMsj" id="paisResidenciaError"></p>
                 </div>
                 <div id="formBtnEnviar">
                     <button id="btnEnviar" type="submit">Enviar</button>
@@ -43,12 +48,14 @@
             </div>
             <!-- BOTONES ESTILOS -->
             <div id="formBtnEstilos">
-                <button id="btnEstilo1" type="submit"  >Estilo 1</button>
-                <button id="btnEstiloAltoContraste" type="submit" >Estilo de Alto Contraste</button>
+                <button id="btnEstilo1" type="submit" onclick="toggleContraste()" >Estilo 1</button>
+                <button id="btnEstiloAltoContraste" type="submit" onclick="toggleAltoContraste()">Estilo de Alto Contraste</button>
             </div>
-            
         </form>
-    
     </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>    
+    <script src="./js/main.js"></script>
 </body>
 </html>
